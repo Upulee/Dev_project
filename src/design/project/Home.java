@@ -285,7 +285,7 @@ public class Home extends javax.swing.JFrame {
 
         Login.setBackground(new java.awt.Color(0, 0, 0));
 
-        jLabel86.setIcon(new javax.swing.ImageIcon("C:\\Users\\UPULEE\\Downloads\\download.jpg")); // NOI18N
+        jLabel86.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/download.jpg"))); // NOI18N
 
         jLabel87.setFont(new java.awt.Font("Segoe UI", 1, 48)); // NOI18N
         jLabel87.setForeground(new java.awt.Color(255, 255, 255));
@@ -311,7 +311,7 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(jLabel87)
                 .addGap(38, 38, 38)
                 .addComponent(jLabel86)
-                .addContainerGap(200, Short.MAX_VALUE))
+                .addContainerGap(168, Short.MAX_VALUE))
         );
 
         Homefixed.add(Login, "card2");
@@ -551,14 +551,14 @@ public class Home extends javax.swing.JFrame {
                 .addGroup(LoginpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnexit, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnlogin, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(119, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         Home2.add(Loginpanel, "card5");
 
         Home.setBackground(new java.awt.Color(255, 255, 255));
 
-        jLabel88.setIcon(new javax.swing.ImageIcon("C:\\Users\\UPULEE\\Downloads\\viewing-a-fingerprint-mark-like-binary-code (6).png")); // NOI18N
+        jLabel88.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/viewing-a-fingerprint-mark-like-binary-code (6).png"))); // NOI18N
 
         javax.swing.GroupLayout HomeLayout = new javax.swing.GroupLayout(Home);
         Home.setLayout(HomeLayout);
@@ -574,7 +574,7 @@ public class Home extends javax.swing.JFrame {
             .addGroup(HomeLayout.createSequentialGroup()
                 .addGap(119, 119, 119)
                 .addComponent(jLabel88, javax.swing.GroupLayout.PREFERRED_SIZE, 354, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(131, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         Home2.add(Home, "card4");
@@ -1940,7 +1940,7 @@ public class Home extends javax.swing.JFrame {
         );
         mainLayout.setVerticalGroup(
             mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Home2, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+            .addComponent(Home2, javax.swing.GroupLayout.PREFERRED_SIZE, 572, Short.MAX_VALUE)
             .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(Homefixed, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
