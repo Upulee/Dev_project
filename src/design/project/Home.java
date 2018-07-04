@@ -105,16 +105,16 @@ public class Home extends javax.swing.JFrame {
         jLabel93 = new javax.swing.JLabel();
         jLabel94 = new javax.swing.JLabel();
         Forms = new javax.swing.JPanel();
-        addmain = new javax.swing.JPanel();
-        btnStu = new javax.swing.JPanel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        btnLec = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        btnVisit = new javax.swing.JPanel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
+        VisitorAdd = new javax.swing.JPanel();
+        jLabel95 = new javax.swing.JLabel();
+        jLabel96 = new javax.swing.JLabel();
+        jLabel97 = new javax.swing.JLabel();
+        jLabel98 = new javax.swing.JLabel();
+        jLabel99 = new javax.swing.JLabel();
+        txtName = new javax.swing.JTextField();
+        txtTele = new javax.swing.JTextField();
+        txtEmail = new javax.swing.JTextField();
+        txtName4 = new javax.swing.JTextField();
         viewmain = new javax.swing.JPanel();
         btnStu1 = new javax.swing.JPanel();
         jLabel27 = new javax.swing.JLabel();
@@ -165,6 +165,16 @@ public class Home extends javax.swing.JFrame {
         jLabel51 = new javax.swing.JLabel();
         dtch = new com.toedter.calendar.JDateChooser();
         btnBackStu = new javax.swing.JButton();
+        addmain = new javax.swing.JPanel();
+        btnStu = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+        btnLec = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        btnVisit = new javax.swing.JPanel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
         LecAdd = new javax.swing.JPanel();
         jLabel41 = new javax.swing.JLabel();
         txtfn1 = new javax.swing.JTextField();
@@ -805,116 +815,91 @@ public class Home extends javax.swing.JFrame {
 
         Home2.add(Administration, "card3");
 
-        addmain.setBackground(new java.awt.Color(203, 33, 89));
-        addmain.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jLabel95.setText("Name");
 
-        btnStu.setBackground(new java.awt.Color(203, 65, 118));
-        btnStu.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnStuMousePressed(evt);
+        jLabel96.setText("Telephone");
+
+        jLabel97.setText("E-mail");
+
+        jLabel98.setText("Lectures start Date");
+
+        jLabel99.setText("Lectures end  Date");
+
+        txtName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtNameActionPerformed(evt);
             }
         });
 
-        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/project/images/icons8_Contacts_32px.png"))); // NOI18N
+        txtTele.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTeleActionPerformed(evt);
+            }
+        });
 
-        jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Student");
+        txtEmail.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtEmailActionPerformed(evt);
+            }
+        });
 
-        javax.swing.GroupLayout btnStuLayout = new javax.swing.GroupLayout(btnStu);
-        btnStu.setLayout(btnStuLayout);
-        btnStuLayout.setHorizontalGroup(
-            btnStuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnStuLayout.createSequentialGroup()
-                .addGap(40, 40, 40)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+        txtName4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtName4ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout VisitorAddLayout = new javax.swing.GroupLayout(VisitorAdd);
+        VisitorAdd.setLayout(VisitorAddLayout);
+        VisitorAddLayout.setHorizontalGroup(
+            VisitorAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VisitorAddLayout.createSequentialGroup()
+                .addGap(28, 28, 28)
+                .addGroup(VisitorAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel95, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(VisitorAddLayout.createSequentialGroup()
+                        .addComponent(jLabel96, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(41, 41, 41))
+                    .addGroup(VisitorAddLayout.createSequentialGroup()
+                        .addComponent(jLabel97, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(69, 69, 69))
+                    .addGroup(VisitorAddLayout.createSequentialGroup()
+                        .addComponent(jLabel98, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(4, 4, 4))
+                    .addGroup(VisitorAddLayout.createSequentialGroup()
+                        .addComponent(jLabel99, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGap(6, 6, 6)))
+                .addGap(43, 43, 43)
+                .addGroup(VisitorAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtTele, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(txtName4, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(121, 121, 121))
+        );
+        VisitorAddLayout.setVerticalGroup(
+            VisitorAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(VisitorAddLayout.createSequentialGroup()
+                .addGap(95, 95, 95)
+                .addGroup(VisitorAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel95, javax.swing.GroupLayout.DEFAULT_SIZE, 25, Short.MAX_VALUE)
+                    .addComponent(txtName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addContainerGap(47, Short.MAX_VALUE))
-        );
-        btnStuLayout.setVerticalGroup(
-            btnStuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(btnStuLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel2)
-                .addContainerGap(12, Short.MAX_VALUE))
-        );
-
-        addmain.add(btnStu, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 190, -1));
-
-        btnLec.setBackground(new java.awt.Color(203, 43, 100));
-        btnLec.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnLecMousePressed(evt);
-            }
-        });
-
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/project/images/icons8_Manager_32px.png"))); // NOI18N
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setText("Lecturer");
-
-        javax.swing.GroupLayout btnLecLayout = new javax.swing.GroupLayout(btnLec);
-        btnLec.setLayout(btnLecLayout);
-        btnLecLayout.setHorizontalGroup(
-            btnLecLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnLecLayout.createSequentialGroup()
-                .addGap(37, 37, 37)
-                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel6)
-                .addContainerGap(48, Short.MAX_VALUE))
-        );
-        btnLecLayout.setVerticalGroup(
-            btnLecLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(btnLecLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel6)
-                .addContainerGap(12, Short.MAX_VALUE))
-        );
-
-        addmain.add(btnLec, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 190, -1));
-
-        btnVisit.setBackground(new java.awt.Color(203, 43, 100));
-        btnVisit.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mousePressed(java.awt.event.MouseEvent evt) {
-                btnVisitMousePressed(evt);
-            }
-        });
-
-        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/project/images/icons8_User_32px_1.png"))); // NOI18N
-
-        jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setText("Visitor");
-
-        javax.swing.GroupLayout btnVisitLayout = new javax.swing.GroupLayout(btnVisit);
-        btnVisit.setLayout(btnVisitLayout);
-        btnVisitLayout.setHorizontalGroup(
-            btnVisitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(btnVisitLayout.createSequentialGroup()
-                .addGap(41, 41, 41)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGroup(VisitorAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel96, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)
+                    .addComponent(txtTele, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(13, 13, 13)
+                .addGroup(VisitorAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel97, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtEmail, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
-                .addComponent(jLabel8)
-                .addContainerGap(46, Short.MAX_VALUE))
+                .addComponent(jLabel98, javax.swing.GroupLayout.DEFAULT_SIZE, 20, Short.MAX_VALUE)
+                .addGap(18, 18, 18)
+                .addGroup(VisitorAddLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel99, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtName4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(320, 320, 320))
         );
-        btnVisitLayout.setVerticalGroup(
-            btnVisitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(btnVisitLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel8)
-                .addContainerGap(12, Short.MAX_VALUE))
-        );
-
-        addmain.add(btnVisit, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 190, -1));
 
         viewmain.setBackground(new java.awt.Color(20, 33, 89));
         viewmain.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1246,6 +1231,119 @@ public class Home extends javax.swing.JFrame {
         });
         StuAdd.add(btnBackStu, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 480, 80, 44));
 
+        addmain.setBackground(new java.awt.Color(203, 33, 89));
+        addmain.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        btnStu.setBackground(new java.awt.Color(203, 65, 118));
+        btnStu.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnStuMousePressed(evt);
+            }
+        });
+
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/project/images/icons8_Contacts_32px.png"))); // NOI18N
+
+        jLabel2.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel2.setText("Student");
+
+        javax.swing.GroupLayout btnStuLayout = new javax.swing.GroupLayout(btnStu);
+        btnStu.setLayout(btnStuLayout);
+        btnStuLayout.setHorizontalGroup(
+            btnStuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnStuLayout.createSequentialGroup()
+                .addGap(40, 40, 40)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel2)
+                .addContainerGap(47, Short.MAX_VALUE))
+        );
+        btnStuLayout.setVerticalGroup(
+            btnStuLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(btnStuLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel2)
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
+        addmain.add(btnStu, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 110, 190, -1));
+
+        btnLec.setBackground(new java.awt.Color(203, 43, 100));
+        btnLec.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnLecMousePressed(evt);
+            }
+        });
+
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/project/images/icons8_Manager_32px.png"))); // NOI18N
+
+        jLabel6.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setText("Lecturer");
+
+        javax.swing.GroupLayout btnLecLayout = new javax.swing.GroupLayout(btnLec);
+        btnLec.setLayout(btnLecLayout);
+        btnLecLayout.setHorizontalGroup(
+            btnLecLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnLecLayout.createSequentialGroup()
+                .addGap(37, 37, 37)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(jLabel6)
+                .addContainerGap(48, Short.MAX_VALUE))
+        );
+        btnLecLayout.setVerticalGroup(
+            btnLecLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(btnLecLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel6)
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
+        addmain.add(btnLec, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 200, 190, -1));
+
+        btnVisit.setBackground(new java.awt.Color(203, 43, 100));
+        btnVisit.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                btnVisitMousePressed(evt);
+            }
+        });
+
+        jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/design/project/images/icons8_User_32px_1.png"))); // NOI18N
+
+        jLabel8.setFont(new java.awt.Font("Segoe UI Semibold", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setText("Visitor");
+
+        javax.swing.GroupLayout btnVisitLayout = new javax.swing.GroupLayout(btnVisit);
+        btnVisit.setLayout(btnVisitLayout);
+        btnVisitLayout.setHorizontalGroup(
+            btnVisitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(btnVisitLayout.createSequentialGroup()
+                .addGap(41, 41, 41)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jLabel8)
+                .addContainerGap(46, Short.MAX_VALUE))
+        );
+        btnVisitLayout.setVerticalGroup(
+            btnVisitLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel7, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(btnVisitLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jLabel8)
+                .addContainerGap(12, Short.MAX_VALUE))
+        );
+
+        addmain.add(btnVisit, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 290, 190, -1));
+
+        StuAdd.add(addmain, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 967, 524));
+
         LecAdd.setBackground(new java.awt.Color(255, 255, 255));
         LecAdd.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -1480,7 +1578,7 @@ public class Home extends javax.swing.JFrame {
         StuUpdateLayout.setVerticalGroup(
             StuUpdateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(StuUpdateLayout.createSequentialGroup()
-                .addGap(87, 87, 87)
+                .addGap(106, 106, 106)
                 .addGroup(StuUpdateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(StuUpdateLayout.createSequentialGroup()
                         .addGroup(StuUpdateLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1830,7 +1928,6 @@ public class Home extends javax.swing.JFrame {
         Forms.setLayout(FormsLayout);
         FormsLayout.setHorizontalGroup(
             FormsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(addmain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(FormsLayout.createSequentialGroup()
                 .addComponent(viewmain, javax.swing.GroupLayout.PREFERRED_SIZE, 481, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -1849,18 +1946,22 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(LecUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(FormsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(StuUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(FormsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(FormsLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(VisitorAdd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
         FormsLayout.setVerticalGroup(
             FormsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(LecAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(FormsLayout.createSequentialGroup()
-                .addGroup(FormsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addComponent(Updatemain, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(addmain, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 515, Short.MAX_VALUE))
+                .addGap(530, 530, 530)
+                .addComponent(Updatemain, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
             .addComponent(viewmain, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(FormsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addComponent(StuAdd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(StuAdd, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 1045, Short.MAX_VALUE))
             .addGroup(FormsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(FormsLayout.createSequentialGroup()
                     .addComponent(StuView, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1871,6 +1972,11 @@ public class Home extends javax.swing.JFrame {
                 .addComponent(LecUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(FormsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(StuUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(FormsLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(FormsLayout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(VisitorAdd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
         );
 
         Home2.add(Forms, "card4");
@@ -1940,7 +2046,7 @@ public class Home extends javax.swing.JFrame {
         );
         mainLayout.setVerticalGroup(
             mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Home2, javax.swing.GroupLayout.PREFERRED_SIZE, 572, Short.MAX_VALUE)
+            .addComponent(Home2, javax.swing.GroupLayout.DEFAULT_SIZE, 572, Short.MAX_VALUE)
             .addGroup(mainLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addComponent(Homefixed, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -2921,6 +3027,22 @@ public class Home extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_combo_accessActionPerformed
 
+    private void txtNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtNameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtNameActionPerformed
+
+    private void txtTeleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTeleActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTeleActionPerformed
+
+    private void txtEmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEmailActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtEmailActionPerformed
+
+    private void txtName4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtName4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtName4ActionPerformed
+
   
     /**
      * @param args the command line arguments
@@ -2977,6 +3099,7 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JPanel StuUpdate;
     private javax.swing.JPanel StuView;
     private javax.swing.JPanel Updatemain;
+    private javax.swing.JPanel VisitorAdd;
     private javax.swing.JPanel addmain;
     private javax.swing.JPanel btnAccount;
     private javax.swing.JPanel btnAdd;
@@ -3121,6 +3244,11 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel92;
     private javax.swing.JLabel jLabel93;
     private javax.swing.JLabel jLabel94;
+    private javax.swing.JLabel jLabel95;
+    private javax.swing.JLabel jLabel96;
+    private javax.swing.JLabel jLabel97;
+    private javax.swing.JLabel jLabel98;
+    private javax.swing.JLabel jLabel99;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
@@ -3156,12 +3284,16 @@ public class Home extends javax.swing.JFrame {
     private javax.swing.JButton txtClr1;
     private javax.swing.JTextField txtCrs;
     private javax.swing.JTextField txtCrs2;
+    private javax.swing.JTextField txtEmail;
     private javax.swing.JButton txtLecClr;
     private javax.swing.JTextField txtLecID;
     private javax.swing.JTextField txtLecID1;
+    private javax.swing.JTextField txtName;
+    private javax.swing.JTextField txtName4;
     private javax.swing.JTextField txtStuNo;
     private javax.swing.JTextField txtStuNo1;
     private javax.swing.JTextField txtStuNo2;
+    private javax.swing.JTextField txtTele;
     private javax.swing.JTextField txt_id_search;
     private javax.swing.JTextField txtdis;
     private javax.swing.JTextField txtdis1;
